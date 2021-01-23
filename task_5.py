@@ -8,20 +8,19 @@
 '''
 
 def my_sum ():
-    sum_res = 0
-    ex = False
-    while ex == False:
-        number = input('Input numbers or Q for quit - ').split()
+    sum_result = 0
+    exit = False
+    while exit == False:
+        number = input('Input numbers or Q for quit: ').split()
 
-        res = 0
-        for el in range(len(number)):
-            if number[el] == 'q' or number[el] == 'Q':
-                ex = True
+        result = 0
+        for element in range(len(number)):
+            if number[element] == 'q' or number[element] == 'Q':
+                exit = True
                 break
             else:
-                res = res + int(number[el])
-        sum_res = sum_res + res
-        print(f'Current sum is {sum_res}')
-    print(f'Your final sum is {sum_res}')
-
-print(my_sum())
+                result = result + int(number[element])
+        sum_result = sum_result + result
+        print(f'Current sum is {sum_result}')
+    print(f'Your final sum is {sum_result}')
+(my_sum())
